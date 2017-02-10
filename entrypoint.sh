@@ -1,6 +1,6 @@
 #!/bin/bash
 
-nohup /usr/local/bin/net_speeder venet0 "ip" >/dev/null 2>&1 &
+nohup /usr/local/bin/net_speeder eth0 "ip" >/dev/null 2>&1 &
 if [ ! -d /var/log/vpnserver ]; then
     mkdir -p /var/log/vpnserver
 fi
