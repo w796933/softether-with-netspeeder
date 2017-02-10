@@ -12,4 +12,6 @@ COPY entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/net_speeder
 
+EXPOSE 443/tcp 992/tcp 1194/tcp 1194/udp 5555/tcp
+
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
